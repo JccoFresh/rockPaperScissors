@@ -4,9 +4,8 @@ function selectRPS() {
 let choice;
 let userImage = document.getElementById("user");
 let computerImage = document.getElementById("cI");
-
+let result = document.getElementById("result");
 function checkResult(userChoice) {
-    let result = document.getElementById("result");
     let rng = selectRPS();
     if (userChoice == 1) {
         choice = 1; //1 is paper
@@ -38,4 +37,11 @@ function checkResult(userChoice) {
     else if ((choice == 3 && rng == 2) || (choice == 2 && rng == 1) || (choice == 1 && rng == 3)) {
         result.innerHTML = "You lose!";
     }
+}
+
+function reset() {
+    result.innerHTML = "";
+    userImage.src = "https://i.postimg.cc/pXs6tSZt/Lol-question-mark.png";
+    computerImage.src = "https://i.postimg.cc/pXs6tSZt/Lol-question-mark.png";
+    
 }
