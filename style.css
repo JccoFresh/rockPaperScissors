@@ -1,3 +1,51 @@
+html,body {
+    text-align: center;
+    height: 100%;
+    display: grid;
+    overflow: hidden;
+}
+
+h1{
+    margin-top: -2em;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+}
+
+span{
+    text-align: center;
+    margin: 0;
+}
 img{
-	width: 15%;
+	width: 200px;
+	height:200px;
+}
+
+.box {
+    margin: 1em 5em 2em 5em;
+    display: inline-block;
+}
+
+button, .center {
+    text-align:center;
+}
+
+.choice {
+    height: 130px;
+    width: 130px;
+    margin: 3em 5em 5em 3em;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+#result {
+    font-size: 25px;
 }
