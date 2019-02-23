@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div class="center">
+		<br/>
 		<h1>Rock Paper Scissors Game</h1>
 		 <div class="box"><h2>You</h2>
 			<img src="https://i.postimg.cc/pXs6tSZt/Lol-question-mark.png" id="user">
@@ -16,13 +17,14 @@
 	 	 <div class="box"><h2>Computer</h2>
 			<img src="https://i.postimg.cc/pXs6tSZt/Lol-question-mark.png" id="cI">
 		 </div>
-	     <span class="block" id="result"></span>
+	  	<p>Select a choice, and compare it to the computer's choice!</p>
 	    <button onClick="reset()" type="button" class="btn btn-primary">Play Again!</button>
+	    <span class="block" id="result"></span>
 	     </div>
-		<div class="center">
-			<div class="inline"><a onClick="checkResult(1)"><img id="paper" class="choice" src="assets/paper.png"></a></div>
-			<div class="inline"><a onClick="checkResult(2)"> <img id="rock" class="choice" src="assets/rock.png"></a></div>
-			<div class="inline"><a onClick="checkResult(3)"><img id="scissors" class="choice" src="assets/scissors.png"></a></div>
+		<div class="center" id="img">
+			<div class="inline"><img onClick="checkResult(1)" class="choice" src="assets/paper.png"></div>
+			<div class="inline"><img onClick="checkResult(2)" class="choice" src="assets/rock.png"></div>
+			<div class="inline"><img onClick="checkResult(3)" class="choice" src="assets/scissors.png"></div>
 		</div>
  	<script type="text/javascript" src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
